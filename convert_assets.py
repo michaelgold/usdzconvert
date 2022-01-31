@@ -14,4 +14,4 @@ for input_file_name in source_file_list:
 for glb_file in source_file_list:
     print(glb_file)
     destination = "../dist/assets/{}".format(os.path.split(glb_file)[1])
-    shutil.copyfile(glb_file, destination)
+    shutil.move(glb_file, destination)
